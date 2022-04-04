@@ -5,7 +5,7 @@ const TechStack = () => {
 
   return (
     <div className='tech-container'>
-      <div >
+      <div>
         <i className="devicon-css3-plain-wordmark" ></i>
         <h3>CSS</h3>
       </div>

@@ -4,6 +4,7 @@ const Interests = () => {
 
   return (
     <div className='interests'>
+      <h2 className='title'>Interests</h2>
       <div>
         <h3>Not so guilty pleasure: Reality TV</h3>
         <p>Most recent rotation: Love Is Blind, Catfish, Queer Eye, RHOBH </p>
