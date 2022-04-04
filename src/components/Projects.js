@@ -15,10 +15,10 @@ const Projects = () => {
   }
 
   const handleReadMe = (e) => {
-    e.target.title === 'safety' && window.open()
-    e.target.title === 'holiday' && window.open()
-    e.target.title === 'cocktail' && window.open()
-    e.target.title === 'monster' && window.open()
+    e.target.title === 'safety' && window.open('https://github.com/EssiKarj/safety_app/tree/main')
+    e.target.title === 'holiday' && window.open('https://github.com/EssiKarj/Holiday_Mates')
+    e.target.title === 'cocktail' && window.open('https://github.com/EssiKarj/Project-cocktails')
+    e.target.title === 'monster' && window.open('https://github.com/EssiKarj/project-1')
   }
 
   return (
@@ -55,7 +55,7 @@ const Projects = () => {
             On this web-based application you connect with sharing a unique code to your friends and then add all your holidays to a one big map of everyone's adventures.
           </p>
 
-          <p className='readme' title='safety' onClick={e => handleReadMe(e)}>ReadMe</p>
+          <p className='readme' title='holiday' onClick={e => handleReadMe(e)}>ReadMe</p>
         </div>
 
         <img src={holiday} alt='Project 3' title='holiday' onClick={e => handleClick(e)} />
@@ -76,7 +76,7 @@ const Projects = () => {
             <em>"There's always time for a cocktail" - Mrs. Kasha Davis</em>
           </p>
 
-          <p className='readme' title='safety' onClick={e => handleReadMe(e)}>ReadMe</p>
+          <p className='readme' title='cocktail' onClick={e => handleReadMe(e)}>ReadMe</p>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const Projects = () => {
             The game is built purely with JavaScript, HTML and CSS with the extra spice of my own illustrations.
           </p>
 
-          <p className='readme' title='safety' onClick={e => handleReadMe(e)}>ReadMe</p>
+          <p className='readme' title='monster' onClick={e => handleReadMe(e)}>ReadMe</p>
         </div>
 
         <img src={monsters} alt='Project 1' title='monster' onClick={e => handleClick(e)} />
