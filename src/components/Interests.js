@@ -3,7 +3,7 @@ import React from 'react'
 const Interests = () => {
 
   return (
-    <div className='interests'>
+    <div className='interests' id='interests'>
       <h2 className='title'>Interests</h2>
       <div>
         <h3>Not so guilty pleasure: Reality TV</h3>

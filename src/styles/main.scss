@@ -1,3 +1,5 @@
+@import "./animations.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +13,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   min-height: 300vh;
 
   font-family: "Poppins", sans-serif;
@@ -46,13 +48,15 @@ p {
   justify-content: right;
   align-items: flex-end;
   position: sticky;
-  margin-top: 10px;
+  position: -webkit-sticky;
+  top: 0;
+  margin-top: 0px;
   padding: 0;
   gap: 10px;
-  top: 0;
   i {
     font-size: x-large;
     margin: 15px;
+    color: black;
   }
 }
 
@@ -70,10 +74,31 @@ p {
       font-size: 40px;
       font-family: "Comfortaa", cursive;
     }
+    em {
+      font-size: larger;
+      font-style: normal;
+    }
   }
+  .quicklinks {
+    text-align: left;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
 
-  div {
-    flex-grow: 1;
+      gap: 17px;
+      li {
+        font-size: larger;
+        -webkit-box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -108,6 +133,9 @@ p {
     margin: 20px;
     outline: 2px solid white;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 30px -26px rgba(0, 0, 0, 0.75);
   }
   img:hover {
     outline: 2px solid rgb(255, 157, 174);
@@ -148,7 +176,7 @@ p {
 }
 
 .interests {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -159,8 +187,15 @@ p {
 }
 
 .about-me {
-  text-align: right;
+  text-align: center;
   margin: 100px 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    margin-bottom: 20px;
+  }
 }
 
 .contact {
@@ -168,9 +203,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  h3 {
-    font-size: x-large;
-  }
+
   p {
     font-size: large;
 
@@ -180,6 +213,17 @@ p {
     }
     strong:hover {
       font-style: italic;
+    }
+    button {
+      background: none;
+      border: none;
+      font-size: large;
+      i {
+        margin-right: 7px;
+      }
+    }
+    button:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -204,6 +248,19 @@ p {
     p {
       font-size: 20px;
     }
+    .quicklinks {
+      text-align: center;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5px;
+        gap: 5px;
+        li {
+          text-decoration: underline;
+        }
+      }
+    }
   }
   .project {
     flex-direction: column;
@@ -214,6 +271,15 @@ p {
     img {
       width: 50vw;
       order: 2;
+    }
+  }
+
+  .interests {
+    div {
+      width: 70%;
+    }
+    :nth-child(3) {
+      align-self: flex-end;
     }
   }
 }

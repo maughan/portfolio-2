@@ -22,7 +22,7 @@ const Projects = () => {
   }
 
   return (
-    <div className='projects-container'>
+    <div className='projects-container' id='projects'>
       <h2 className='title'>Projects</h2>
 
       <div className='project'>
@@ -73,7 +73,7 @@ const Projects = () => {
           <p>
             This is the product of 48 hour Reactathon where in a pair we built this cocktail themed website which generates a drinks list
             based on your name.<br />
-            <em>"There's always time for a cocktail" - Mrs. Kasha Davis</em>
+            <em>"There's always time for a cocktail"<br /> - Mrs. Kasha Davis</em>
           </p>
 
           <p className='readme' title='cocktail' onClick={e => handleReadMe(e)}>ReadMe</p>
