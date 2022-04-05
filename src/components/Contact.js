@@ -24,7 +24,7 @@ const Contact = () => {
         <button onClick={() => {
           window.location = 'mailto:essi.s.karjalainen@gmail.com'
         }}>
-          <i class="fa-solid fa-envelope"></i>essi.s.karjalainen@gmail.com
+          <i className="fa-solid fa-envelope"></i>essi.s.karjalainen@gmail.com
         </button>
 
 
