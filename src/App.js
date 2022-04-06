@@ -10,9 +10,11 @@ import Interests from './components/Interests'
 
 
 
+
 function App() {
   return (
     <div className='page-container'>
+
       <LinkBar />
       <Welcome />
       <Projects />

@@ -4,7 +4,7 @@ import React from 'react'
 const TechStack = () => {
 
   return (
-    <div className='tech-container'>
+    <div className='tech-container' id='teckstack'>
       <div>
         <i className="devicon-css3-plain-wordmark" ></i>
         <h3>CSS</h3>

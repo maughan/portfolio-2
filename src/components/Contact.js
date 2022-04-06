@@ -10,8 +10,8 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact'>
-      <h3 className='left-aligned'>Want to stay in contact?</h3>
+    <div className='contact' id='contact'>
+      <h3 className='left-aligned title'>Want to stay in contact?</h3>
       <p className='right-aligned'>
         Follow me on my socials and not so socials:<br />
         <strong className='social-link' title='github' onClick={e => handleClick(e)}>GitHub, </strong>
@@ -19,8 +19,15 @@ const Contact = () => {
         <strong className='social-link' title='instagram' onClick={e => handleClick(e)}>Instagram</strong>
       </p>
       <p className='right-aligned'>
-        Drop me an email for any enquiries: <br />
-        essi.s.karjalainen@gmail.com
+        Drop me an email for any enquiries:<br />
+
+        <button onClick={() => {
+          window.location = 'mailto:essi.s.karjalainen@gmail.com'
+        }}>
+          <i className="fa-solid fa-envelope"></i>essi.s.karjalainen@gmail.com
+        </button>
+
+
       </p>
     </div>
   )
